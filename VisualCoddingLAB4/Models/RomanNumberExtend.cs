@@ -7,6 +7,7 @@ namespace VisualCoddingLAB4.Models
         public RomanNumberExtend(string num)
             : base(conv_to_arab(num))
         {
+           // conv_to_arab(num);
         }
 
         private static ushort conv_to_arab(string n)
@@ -28,7 +29,7 @@ namespace VisualCoddingLAB4.Models
                     new_Arab_num += arabic[j];
                 temp_prev = arabic[j];
             }
-
+           //new_Arab_num.ToString();
             return new_Arab_num;
         }
     }
